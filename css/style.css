@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body .header {
+  background-color: red;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body .header .content {
+  padding: 100px;
+}
+
+body .header .header-box {
+  height: 100vh;
+}
+
+body .header .header-box .content h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+body .header .header-box .content button {
+  width: 30%;
+  margin: auto;
+  display: block;
+  margin-top: 28px;
+}
+
+.add-book {
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 0;
+  background-color: #841887;
+  color: red;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.add-book .box {
+  overflow: hidden;
+}
+
+.add-book .box input,
+.add-book .box button {
+  height: 40px;
+  overflow: hidden;
+}
+
+.add-book .box button {
+  text-align: center;
+}
+
+.add-book table {
+  -webkit-box-shadow: 1px 1px 6px #6a5d5d;
+          box-shadow: 1px 1px 6px #6a5d5d;
+}
+
+.alert {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fa-times {
+  color: red;
+  cursor: pointer;
+  background: #d3cfcf;
+  padding: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+tr {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: slide 0.5s forwards ease;
+          animation: slide 0.5s forwards ease;
+  opacity: 0;
+}
+
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    background: transparent;
+  }
+  to {
+    opacity: 1;
+    background-color: white !important;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    background: transparent;
+  }
+  to {
+    opacity: 1;
+    background-color: white !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

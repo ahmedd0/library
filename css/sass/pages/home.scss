@@ -1,0 +1,58 @@
+.add-book {
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  z-index: 0;
+  background-color: #841887;
+  color: red;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  .box {
+    overflow: hidden;
+    input,
+    button {
+      height: 40px;
+      overflow: hidden;
+    }
+    button {
+      text-align: center;
+    }
+  }
+  table {
+    box-shadow: 1px 1px 6px #6a5d5d;
+  }
+}
+.alert {
+  transition: all 0.3s ease;
+}
+.fa-times {
+  color: red;
+  cursor: pointer;
+  background: #d3cfcf;
+  padding: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// End Header
+tr {
+  transition: all 0.3s ease-in-out;
+  animation: slide 0.5s forwards ease;
+  opacity: 0;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    background: transparent;
+  }
+  to {
+    opacity: 1;
+    background-color: white !important;
+  }
+}

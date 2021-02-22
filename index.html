@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <div class="header bg-dark">
+    <div class="container">
+      <div class="header-box text-white d-flex justify-content-center align-items-center">
+        <div class="content">
+          <h1 class="text">Welcome To our Library</h1>
+          <button class="btn btn-primary text-center get-starting">
+            Get Starting
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End header -->
+  <div class="add-book">
+    <div class="container">
+      <div class="box pt-5 pb-5">
+        <h2 class="text-white">Add Book</h2>
+        <input type="text" class="name" />
+        <input type="text" class="author" />
+        <button class="btn btn-danger add">Add</button>
+      </div>
+      <div class="a text-white"></div>
+      <div class="b text-white"></div>
+      <div class="alert alert-warning alert-dismissible fade" role="alert">
+        Sorry You can't insert Empty Value!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <table class="table bg-white">
+        <thead>
+          <tr>
+            <th scope="col">Book Name</th>
+            <th scope="col">Book Author</th>
+          </tr>
+        </thead>
+        <tbody class="booklist">
+          <tr class="book-name">
+            <td>48 Laws Of Power</td>
+            <td>Robert Green</td>
+            <td class="rm"><i class="fas fa-times"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Start Add Book Section -->
+
+  <!-- End Add Book Section -->
+  <script src="js//jquery.min.js"></script>
+  <script src="js//bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
